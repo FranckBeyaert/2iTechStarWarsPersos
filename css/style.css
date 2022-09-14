@@ -80,22 +80,18 @@ p
 {
     margin-bottom:1em;
 }
-div
-{
-    color: var(--color-action);
-    
-}
+
 
 .container
 {
-    text-align: center;   
+    text-align: center;
+    color: var(--color-action);   
 }
 
 #hello
 {
-    position: absolute;
-    left: 10%;
-    top: 35%;
+    width: 100%;
+    max-width: 30em;
 }
 
 /* header */
