@@ -92,6 +92,8 @@ p
 {
     width: 100%;
     max-width: 30em;
+    border-radius: 1em;
+    margin-bottom: 1em;
 }
 
 /* header */
@@ -200,4 +202,37 @@ main
         border: 1px solid var(--color-background);
         padding: 0 1em 0 1em;
     }
+}
+/* formulaire */
+input
+{
+    margin-top:0.5em;
+    padding:1em;
+    border-radius: 1em;
+    width:15em;
+}
+input[type="Radio"]
+{
+    margin:0 1em;
+    width: inherit;
+}
+label
+{
+    display: block;
+    margin-bottom: 1em;
+}
+button[type="Submit"], button[type="reset"]
+{
+    padding:1em;
+    background-color: var(--color-action);
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    font-size: 1em;
+    color:var(--color-dark);
+    border-radius: 1em;
+}
+button[type="reset"]
+{
+    background-color: var(--color-dark);
+    color:var(--color-action);
 }
