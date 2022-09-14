@@ -4,78 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Inscription</title>
 </head>
 <body>
     <form action="" method="get">
-
-        <h1>
-            Formulaire d'Inscription 
-        </h1>
+        <header>
+            <img src="img/Star_Wars_Logo.png" alt="Star_Wars_Logo">
+            <nav>
+                <a href="Inscription.html">Inscription</a>
+                <a href="Connexion.html">Connexion</a>
+            </nav>
+            
+        </header>
         
-        <div>
-            <div>
-                <label for="lname">Nom de famille : <br>
-                    <input type="text" name="lname" placeholder="Solo" required>
-                </label>
+        <main class="container">
+            <h1 id="titre">
+                Formulaire d'Inscription 
+            </h1>
+            <div id="info">
+                <div>
+                    <label for="civilite">Civilité : <br>
+                        <input type="radio" name="civilite" checked>Mme
+                        <input type="radio" name="civilite">Mr
+                    </label>
+                </div>
+                <div>
+                    <br>
+                    <label for="lname">Nom de famille : <br>
+                        <input type="text" name="lname" placeholder="Solo" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="fname">Prénom : <br>
+                        <input type="text" name="fname" placeholder="Han" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="date">Date de Naissance : <br> 
+                        <input type="date" name="date" required>
+                    </label>
+                </div>
             </div>
-            <div>
-                <label for="fname">Prénom : <br>
-                    <input type="text" name="fname" placeholder="Han" required>
-                </label>
+            <br>
+            <div id="coord">
+                <div>
+                    <label for="tel">Numéro de Téléphone : <br> 
+                        <input type="tel"  placeholder="06 33 44 55 66" required> 
+                    </label>
+                </div>
+                <div>
+                    <label for="mail">Adresse e-mail: <br>
+                        <input type="email" name="mail" placeholder="han.solo@gmail.com" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="adresse">Adresse : <br>
+                        <input type="text" name="adresse" placeholder="10 rue de Jabba" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="ville">Ville : <br>
+                        <input type="text" name="ville"  placeholder="Coronet City" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="postal">Code Postal : <br>
+                        <input type="number" name="postal" min="1" placeholder="59000" required>
+                    </label>
+                </div>
             </div>
+            <br>
             <div>
-                <label for="date">Date de Naissance : <br> 
-                    <input type="date" name="date" required>
-                </label>
+                <div>
+                    <label for="user">Nom d'utilisateur : <br>
+                        <input type="text" name="user" placeholder="HanSolo" required>
+                    </label>
+                </div> 
+                <div>
+                    <label for="password">Mot de Passe : <br>
+                        <input type="password" name="password" required>
+                    </label>
+                    <br>
+                    <label for="password">Confirmer Mot de Passe : <br>
+                        <input type="password" name="password" required>
+                    </label>
+                </div>
             </div>
-        </div>
-        <br>
-        <div>
-            <div>
-                <label for="tel">Numéro de Téléphone : <br> 
-                    <input type="tel"  placeholder="06 33 44 55 66" required> 
-                </label>
-            </div>
-            <div>
-                <label for="mail">Adresse e-mail: <br>
-                    <input type="email" name="mail" placeholder="han.solo@gmail.com" required>
-                </label>
-            </div>
-        </div>
-        <br>
-        <div>
-            <div>
-                <label for="adresse">Adresse : <br>
-                    <input type="text" name="adresse" placeholder="10 rue de Jabba" required>
-                </label>
-            </div>
-            <div>
-                <label for="ville">Ville : <br>
-                    <input type="text" name="ville"  placeholder="Coronet City" required>
-                </label>
-            </div>
-            <div>
-                <label for="postal">Code Postal : <br>
-                    <input type="number" name="postal" min="1" placeholder="59000" required>
-                </label>
-            </div>
-        </div>
-        <br>
-        <div>
-            <div>
-                <label for="user">Nom d'utilisateur : <br>
-                    <input type="text" name="user" placeholder="HanSolo" required>
-                </label>
-            </div> 
-            <div>
-                <label for="password">Mot de Passe : <br>
-                    <input type="password" name="password" required>
-                </label>
-            </div>
-        </div>
-        <br>
-        <button type="submit" name="submit">S'inscrire</button>
+            <button type="submit" name="submit">S'inscrire</button>
+        </main>
+        <footer>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </footer>
+        
     </form>
     
 </body>

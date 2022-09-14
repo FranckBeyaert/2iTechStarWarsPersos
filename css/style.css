@@ -58,6 +58,16 @@ p
 {
     margin-bottom:1em;
 }
+div
+{
+    color: var(--color-action);
+    
+}
+
+.container
+{
+    text-align: center;   
+}
 /* header */
 header
 {
