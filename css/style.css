@@ -10,6 +10,10 @@ a
 {
     text-decoration: none;
 }
+ul.noBullets
+{
+    list-style-type: none;
+}
 /* vars */
 :root
 {
@@ -43,6 +47,20 @@ main
 {
     background-color: var(--color-dark);
 }
+.simpleLink
+{
+    background-color: var(--color-dark);
+    padding:0.5em 1.2em;
+    border-radius: 2em;
+    font-size: 0.7em;
+}
+.headerLink
+{
+    background-color: var(--color-dark);
+    padding:1em 1.5em;
+    border-radius: 2em;
+    margin-right: 1em;
+}
 a,
 h1, h2, h3
 {
@@ -52,7 +70,11 @@ h1, h2, h3
 }
 h1
 {
-    margin-bottom: 0.3em;
+    margin: 0.3em 0 0.7em 0;
+}
+h2
+{
+    margin-bottom: 0.6em;
 }
 p
 {
@@ -84,13 +106,13 @@ header
     align-items: center;
     padding:1em;
 }
-header a
+/* header a
 {
     padding:1em 1.5em;
     background-color: var(--color-dark);
     border-radius: 2em;
     margin-right: 1em;
-}
+} */
 /* footer */
 footer
 {
@@ -106,10 +128,6 @@ footer img
 footer nav a
 {
     display: block;
-    background-color: var(--color-dark);
-    padding:0.5em 1.2em;
-    border-radius: 2em;
-    font-size: 0.7em;
 }
 footer nav a:not(:last-child)
 {
@@ -120,4 +138,70 @@ main
 {
     padding:1em;
     min-height: calc(100vh - 17.9em);
+}
+/* liste d'images */
+.accueilListe li
+{
+    overflow: hidden;
+    background-color: var(--color-background);
+    margin-top:1em;
+    border-radius: 1em;
+}
+.accueilListe li img
+{
+    width: 100%;
+}
+.accueilListe li div
+{
+    padding:1em;
+}
+@media screen and (min-width:660px)
+{
+    .accueilListe
+    {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .accueilListe li
+    {
+        flex-basis: 30%;
+        max-width: 20em;
+    }
+}
+/* pages intérieures */
+.ficheConteneur
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.ficheConteneur .gauche
+{
+    background-color: var(--color-background);
+}
+.ficheConteneur .gauche img
+{
+    width: 100%;
+}
+@media screen and (min-width:660px)
+{
+    .ficheConteneur
+    {
+        flex-direction: row;
+    }
+    .ficheConteneur .gauche
+    {
+        flex-basis: 13em;
+        margin-right: 1em;
+    }
+    .ficheConteneur .gauche img
+    {
+        width: 15em;
+    }
+    .ficheConteneur .droite
+    {
+        border: 1px solid var(--color-background);
+        padding: 0 1em 0 1em;
+    }
 }
